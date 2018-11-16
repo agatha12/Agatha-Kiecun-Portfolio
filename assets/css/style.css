@@ -1,0 +1,51 @@
+body {
+    /* background-color: lightskyblue; */
+    background-image: url(../images/blue.png);
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+#header{
+    height: 75px;
+    /* background-color: white; */
+    margin: 0 auto;
+    text-align: center;
+    /* opacity: 0.5; */
+}
+.headerbutton {
+    margin: 20px;
+    opacity: 1.0;
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bolder;
+    color:white;
+}
+#agpic {
+    height:400px;
+    width: 300px;
+    float: left;
+    margin: 20px;
+}
+#display {
+
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    color: blue;
+}
+p {
+    margin: 20px;
+}
+h1 {
+    margin:20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.space{
+    height:10px;
+}
+#brand {
+font-size: 30px;
+
+}
