@@ -45,7 +45,30 @@ h1 {
 .space{
     height:10px;
 }
+.lilspace{
+    height: 5px;
+}
 #brand {
 font-size: 30px;
 
+}
+.card {
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 25px;
+    float: left;
+    background-color: rgb(25, 11, 39);
+    
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+    padding: 2px 16px;
+}
+.cardimg{
+    height: 300px;
+    width: 300px;
+    margin: 25px;
 }

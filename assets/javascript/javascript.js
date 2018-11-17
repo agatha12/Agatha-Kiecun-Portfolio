@@ -3,7 +3,6 @@ function about() {
 
     $("#display").empty()
     $("#display").css("background-color", "white")
-    // $("#display").css("height", "800px")
     $("#display").css("width", "600px")
 
     var img = $("<img>")
@@ -24,7 +23,6 @@ $("#contact").on("click", contact)
 function contact(){
     $("#display").empty()
     $("#display").css("background-color", "white")
-    // $("#display").css("height", "300px")
     $("#display").css("width", "300px")
 
     var a = $("<a>")
@@ -68,4 +66,104 @@ function contact(){
     $("#conact").append(p5)
     
     
+}
+
+$("#portfolio").on("click", portfolio)
+function portfolio(){
+    $("#display").empty()
+    $("#display").css("background-color", "white")
+    $("#display").css("width", "800px")
+    makeCards(4)
+
+    var link1a = "https://agatha12.github.io/Job-Search-Site/"
+    var link1b= "https://github.com/agatha12/Job-Search-Site"
+    var link2a = "https://agatha12.github.io/TriviaGame/index.html"
+    var link2b = "https://github.com/agatha12/TriviaGame"
+    var link3a = "https://agatha12.github.io/GifTastic/"
+    var link3b = "https://github.com/agatha12/GifTastic"
+    var link4a = "https://agatha12.github.io/Liri-Bot/index.html"
+    var link4b = "https://github.com/agatha12/Liri-Bot"
+    var img1 = "assets/images/dreamjob.png"
+    var img2 = "assets/images/trivia.png"
+    var img3 = "assets/images/gif.png"
+    var img4 = "assets/images/Screenshot (7).png"
+
+
+    $("#b0").text("Job Search Site")
+    $("#b1").text("Animal Trivia Game")
+    $("#b2").text("Gif Search site")
+    $("#b3").text("Liri Bot Node Application")
+    $("#cardlink10").attr("href", link1a)
+    $("#cardlink10").text("Check out the site")
+    $("#cardlink11").attr("href", link2a)
+    $("#cardlink11").text("Play the game")
+    $("#cardlink12").attr("href", link3a)
+    $("#cardlink12").text("Check out the Site")
+    $("#cardlink13").attr("href", link4a)
+    $("#cardlink13").text("See the screenshoots")
+    $("#cardlink20").attr("href", link1b)
+    $("#cardlink20").text("See the code on GitHub")
+    $("#cardlink21").attr("href", link2b)
+    $("#cardlink21").text("See the code on GitHub")
+    $("#cardlink22").attr("href", link3b)
+    $("#cardlink22").text("See the code on GitHub")
+    $("#cardlink23").attr("href", link4b)
+    $("#cardlink23").text("See the code on GitHub")
+    $("#cardimg0").attr("src", img1)
+    $("#cardimg1").attr("src", img2)
+    $("#cardimg2").attr("src", img3)
+    $("#cardimg3").attr("src", img4)
+    $(".cardlink").attr("target", "blank")
+
+
+
+
+}
+
+function makeCards(howmany){
+    for(var i = 0; i < howmany; i++){
+
+        var div1 = $("<div>")
+        var br = $("<br>")
+        var h4 = $("<h4>")
+        var b = $("<b>")
+        var img = $("<img>")
+        var div2 = $("<div>")
+        var a1 = $("<a>")
+        var a2 = $("<a>")
+        var p1 = $("<p>")
+        var p2 = $("<p>")
+        var p3 = $("<p>")
+
+        div1.addClass("card")
+        div1.attr("id", ("card" + i))
+        h4.addClass("h4")
+        h4.attr("id", "h4" + i)
+        b.addClass("b")
+        b.attr("id", "b" + i)
+        img.addClass("cardimg")
+        img.attr("id", "cardimg" + i)
+        div2.addClass("cardcont")
+        div2.attr("id", "cardcont" + i)
+        a1.addClass("cardlink")
+        a1.attr("id", "cardlink1" + i)
+        a2.addClass("cardlink")
+        a2.attr("id", "cardlink2" + i)
+        p1.addClass("lilspace")
+        p2.addClass("lilspace")
+        p3.addClass("lilspace")
+
+        $("#display").append(div1)
+        $("#card" + i).append(p1)
+        $("#card" + i).append(h4)
+        $("#h4" + i).append(b)
+        $("#card" + i).append(img)
+        $("#card" + i).append(div2)
+        $("#card" + i).append(p2)
+        $("#cardcont" + i).append(a1)
+        $("#cardcont" + i).append(p3)
+        $("#cardcont" + i).append(a2)
+
+
+    }
 }
