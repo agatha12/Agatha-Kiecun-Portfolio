@@ -7,12 +7,15 @@ function about() {
 
     var img = $("<img>")
     var b = $("<br>")
+    var p = $("<p>")
+
+
     img.attr("src", "assets/images/ag.jpg")
     img.attr("id", "agpic")
-    var p = $("<p>")
     p.attr("id", "brand")
     p.text("Enthusiastic full stack developer with a background in Quality Control and Management. Highly motivated, fast learner eager to expand my knowledge of the field and contribute to your company in a meaningful way. Great communicator with experience collaborating on a team to creatively solve problems and produce a quality product on a tight deadline. Detail oriented and neat programer who thrives in a fast paced environment. Proficient in CSS, JavaScript and Node and highly adept at learning new technologies.")
-    $("#display").css("background-color", "white")
+    
+    
     $("#display").append(img)
     $("#display").append(b)
     $("#display").append(p)
@@ -70,6 +73,7 @@ function contact(){
 
 $("#portfolio").on("click", portfolio)
 function portfolio(){
+    
     $("#display").empty()
     $("#display").css("background-color", "white")
     $("#display").css("width", "800px")
@@ -121,10 +125,10 @@ function portfolio(){
 }
 
 function makeCards(howmany){
+
     for(var i = 0; i < howmany; i++){
 
         var div1 = $("<div>")
-        var br = $("<br>")
         var h4 = $("<h4>")
         var b = $("<b>")
         var img = $("<img>")
