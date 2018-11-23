@@ -38,6 +38,7 @@ function contact(){
     var p5 = $("<p>")
     var div = $("<div>")
     var h1 = $("<h1>")
+    var button = $("<button>")
 
 
     a.attr("href", "https://github.com/agatha12")
@@ -58,6 +59,12 @@ function contact(){
     h1.text("Contact Info")
     p4.addClass("space")
     p5.addClass("space")
+    button.attr("id", "modalbutton")
+    button.attr("type", "button")
+    button.attr("data-toggle", "modal")
+    button.addClass("btn btn-primary")
+    button.attr("data-target", "#exampleModal")
+    button.text("Click to send me a message")
     
 
     $("#display").append(div)
@@ -66,7 +73,9 @@ function contact(){
     $("#conact").append(p)
     $("#conact").append(p2)
     $("#conact").append(p3)
+    $("#conact").append(button)
     $("#conact").append(p5)
+
     
     
 }
@@ -171,3 +180,58 @@ function makeCards(howmany){
 
     }
 }
+$('#exampleModal').on('show.bs.modal', function (event) {
+    var button = $(event.relatedTarget) // Button that triggered the modal
+    // var recipient = button.data('whatever') // Extract info from data-* attributes
+    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this)
+    modal.find('.modal-title').text("New message to Agatha")
+    modal.find('.modal-body input').val('Agatha')
+  })
+  $("#sendbutton").on("click", Email)
+  function Email(){
+    $("#sendbutton").remove()
+    
+    var sname = $("#sendername").val()
+    var semail = $("#senderemail").val()
+    var message = $("#messagetext").val()
+    var subject = ("From portfolio from: " + sname + semail)
+    var data = {
+        "access_token": "{4jfxb4lcw3n6ql7ifxo4eim0}" 
+    };
+
+    console.log(sname)
+    console.log(semail)
+    console.log(message)
+
+
+
+        data['subject'] = subject;
+        data['text'] = message;
+
+        $.post('https://postmail.invotes.com/send',
+            data,
+            console.log("sucsess")
+        ).fail();
+
+        return false;
+    
+    
+
+
+
+
+
+
+
+
+
+//     Email.send(semail,
+// "agkiecun@gmail.com",
+// "Sent for portfolio by " + sname,
+// message,
+// "smtp.yourisp.com",
+// "agkiecun@gmail.com",
+// "Big@tom12");
+  }
