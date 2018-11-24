@@ -22,10 +22,11 @@ body {
     /* color:white; */
 }
 #agpic {
-    height:400px;
-    width: 300px;
+    /* height:400px; */
+    /* width: 300px; */
     float: left;
     margin: 20px;
+    font-size: 10px;
 }
 #display {
 

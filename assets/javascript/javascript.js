@@ -3,20 +3,25 @@ function about() {
 
     $("#display").empty()
     $("#display").css("background-color", "white")
-    $("#display").css("width", "600px")
+    $("#display").css("width", "800px")
 
     var img = $("<img>")
     var b = $("<br>")
     var p = $("<p>")
+    var div = $("<div>")
+    var p2 = $("<p>")
 
 
-    img.attr("src", "assets/images/ag.jpg")
-    img.attr("id", "agpic")
+    img.attr("src", "assets/images/agpic.jpg")
+    img.attr("id", "agimg")
+    div.attr("id", "agpic")
+    p2.text("Shedrick Pelt sdotpdotmedia.com social media: @sdotpdotmedia")
     p.attr("id", "brand")
     p.text("Enthusiastic full stack developer with a background in Quality Control and Management. Highly motivated, fast learner eager to expand my knowledge of the field and contribute to your company in a meaningful way. Great communicator with experience collaborating on a team to creatively solve problems and produce a quality product on a tight deadline. Detail oriented and neat programer who thrives in a fast paced environment. Proficient in CSS, JavaScript and Node and highly adept at learning new technologies.")
     
-    
-    $("#display").append(img)
+    div.append(img)
+    div.append(p2)
+    $("#display").append(div)
     $("#display").append(b)
     $("#display").append(p)
 
