@@ -1,5 +1,5 @@
 body {
-    background-color: lightskyblue;
+    background-color: lightgreen;
     /* background-image: url(../images/blue.png); */
     font-family: 'Julius Sans One', sans-serif;
 
@@ -27,6 +27,7 @@ body {
     float: left;
     margin: 20px;
     font-size: 10px;
+    
 }
 #display {
 
