@@ -186,10 +186,6 @@ function makeCards(howmany){
     }
 }
 $('#exampleModal').on('show.bs.modal', function (event) {
-    var button = $(event.relatedTarget) // Button that triggered the modal
-    // var recipient = button.data('whatever') // Extract info from data-* attributes
-    // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-    // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
     modal.find('.modal-title').text("New message to Agatha")
     modal.find('.modal-body input').val('Agatha')
@@ -240,3 +236,25 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 // "agkiecun@gmail.com",
 // "Big@tom12");
   }
+
+  $("#resume").on("click", resume)
+function resume(){
+    $("#display").empty()
+
+    var embed = $("<embed>")
+    // var a = $("<a>")
+    // var div = $("<div>")
+
+
+    embed.attr("src", "assets/pdf/Agatha Kiecun Resume.pdf")
+    embed.attr("type", "application/pdf")
+    embed.attr("id", "resumepdf")
+    // a.attr("href", "assets/pdf/Agatha Kiecun Resume.pdf")
+    // a.text("Download")
+    // div.append(a)
+
+    $("#display").append(embed)
+    // $("#display").append(div)
+
+
+}
