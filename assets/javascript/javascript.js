@@ -242,19 +242,12 @@ function resume(){
     $("#display").empty()
 
     var embed = $("<embed>")
-    // var a = $("<a>")
-    // var div = $("<div>")
-
 
     embed.attr("src", "assets/pdf/Agatha Kiecun Resume.pdf")
     embed.attr("type", "application/pdf")
     embed.attr("id", "resumepdf")
-    // a.attr("href", "assets/pdf/Agatha Kiecun Resume.pdf")
-    // a.text("Download")
-    // div.append(a)
+
 
     $("#display").append(embed)
-    // $("#display").append(div)
-
 
 }

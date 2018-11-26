@@ -96,3 +96,16 @@ font-size: 30px;
     height:1000px;
     width:800px;
 }
+
+a:link {
+    color: forestgreen;
+}
+
+a:visited {
+    color:forestgreen;
+}
+
+#modalbutton {
+    background-color: forestgreen;
+    border-color: forestgreen;
+}
