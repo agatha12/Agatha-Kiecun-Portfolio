@@ -97,19 +97,19 @@ function portfolio(){
     var link1b= "https://github.com/agatha12/Job-Search-Site"
     var link2a = "https://agatha12.github.io/TriviaGame/index.html"
     var link2b = "https://github.com/agatha12/TriviaGame"
-    var link3a = "https://agatha12.github.io/GifTastic/"
-    var link3b = "https://github.com/agatha12/GifTastic"
+    var link3a = "https://frozen-atoll-67387.herokuapp.com/"
+    var link3b = "https://github.com/agatha12/Project2"
     var link4a = "https://agatha12.github.io/Liri-Bot/index.html"
     var link4b = "https://github.com/agatha12/Liri-Bot"
     var img1 = "assets/images/dreamjob.png"
-    var img2 = "assets/images/trivia.png"
-    var img3 = "assets/images/gif.png"
+    var img2 = "assets/images/trivia.png" 
+    var img3 = "assets/images/Screenshot (55).png"
     var img4 = "assets/images/Screenshot (7).png"
 
 
     $("#b0").text("Job Search Site")
     $("#b1").text("Animal Trivia Game")
-    $("#b2").text("Gif Search site")
+    $("#b2").text("shopping Site")
     $("#b3").text("Liri Bot Node Application")
     $("#cardlink10").attr("href", link1a)
     $("#cardlink10").text("Check out the site")
