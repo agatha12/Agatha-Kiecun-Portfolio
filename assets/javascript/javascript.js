@@ -3,7 +3,7 @@ function about() {
 
     $("#display").empty()
     $("#display").css("background-color", "white")
-    $("#display").css("width", "800px")
+    // $("#display").css("width", "800px")
 
     var img = $("<img>")
     var b = $("<br>")
@@ -90,7 +90,7 @@ function portfolio(){
     
     $("#display").empty()
     $("#display").css("background-color", "white")
-    $("#display").css("width", "800px")
+    // $("#display").css("width", "800px")
     makeCards(4)
 
     var link1a = "https://agatha12.github.io/Job-Search-Site/"
