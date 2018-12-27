@@ -1,8 +1,14 @@
+$( window ).resize(function() {
+    media(x)
+  });
+
+
 $("#about").on("click", about)
 function about() {
 
     $("#display").empty()
     $("#display").css("background-color", "white")
+    media(x)
     // $("#display").css("width", "800px")
 
     var img = $("<img>")
@@ -56,7 +62,7 @@ function contact(){
     a2.attr("target", "blank")
     p.text("Email: agkiecun@gmail.com")
     p.css("margin-top", "20px")
-    div.attr("id", "conact")
+    div.attr("id", "conactdiv")
     p2.text("Link to GitHub: ")
     p3.text("Link to LInkedin: ")
     p2.append(a)
@@ -73,13 +79,13 @@ function contact(){
     
 
     $("#display").append(div)
-    $("#conact").append(p4)
-    $("#conact").append(h1)
-    $("#conact").append(p)
-    $("#conact").append(p2)
-    $("#conact").append(p3)
-    $("#conact").append(button)
-    $("#conact").append(p5)
+    $("#conactdiv").append(p4)
+    $("#conactdiv").append(h1)
+    $("#conactdiv").append(p)
+    $("#conactdiv").append(p2)
+    $("#conactdiv").append(p3)
+    $("#conactdiv").append(button)
+    $("#conactdiv").append(p5)
 
     
     
@@ -90,6 +96,7 @@ function portfolio(){
     
     $("#display").empty()
     $("#display").css("background-color", "white")
+    media(x)
     // $("#display").css("width", "800px")
     makeCards(4)
 
@@ -251,3 +258,13 @@ function resume(){
     $("#display").append(embed)
 
 }
+
+function media(x) {
+    if (x.matches) { // If media query matches
+      $("#display").css("width", "350px")
+    } else {
+      $("#display").css("width", "800px")
+    }
+  }
+  
+  var x = window.matchMedia("(max-width: 680px)")

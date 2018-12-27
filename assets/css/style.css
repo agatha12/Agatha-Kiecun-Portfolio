@@ -44,8 +44,9 @@ body {
     margin-top: 30px;
     text-align: center;
     color: forestgreen;
-    width: 800px;
+
 }
+
 p {
     margin: 20px;
 }
@@ -206,7 +207,7 @@ a:visited {
   @media screen and (max-width: 680px) {
     #display {
 
-        width: 350px;
+       
         margin-top:60px;
         
     }
