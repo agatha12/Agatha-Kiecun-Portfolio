@@ -1,5 +1,5 @@
 body {
-    background-color: lightgreen;
+    background-color: black;
     /* background-image: url(../images/blue.png); */
     font-family: 'Julius Sans One', sans-serif;
 
@@ -34,8 +34,9 @@ body {
 #agpic {
     /* height:400px; */
     /* width: 300px; */
-    float: left;
-    margin: 20px;
+    /* float: left; */
+    /* margin: 10px; */
+    padding-top: 20px;
     font-size: 10px;
     
 }
@@ -44,19 +45,26 @@ body {
     margin: 0 auto;
     margin-top: 30px;
     text-align: center;
-    color: forestgreen;
+    color: black;
     font-family: 'Libre Baskerville', serif;
     /* letter-spacing: .05cm; */
     line-height: .9cm;
     font-size: 20px;
 
 }
+#brand {
+    font-size: 20px;
+    color: black;
+    margin-top: 0px;
+    
+    }
 /* #brand
     font-family: 'Poppins', serif;
 } */
 
 p {
     margin: 20px;
+    margin-top: 0px;
 }
 h1 {
     margin:20px;
@@ -69,10 +77,7 @@ h1 {
 .lilspace{
     height: 5px;
 }
-#brand {
-font-size: 30px;
 
-}
 .card {
     width: 350px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -99,16 +104,16 @@ font-size: 30px;
 }
 
 a:link {
-    color: forestgreen;
+    color: black;
 }
 
 a:visited {
-    color:forestgreen;
+    color:black;
 }
 
 #modalbutton {
-    background-color: forestgreen;
-    border-color: forestgreen;
+    background-color: black;
+    border-color:black;
 }
 
 /* Bounce Out */
