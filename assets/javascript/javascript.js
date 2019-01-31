@@ -104,20 +104,20 @@ function portfolio(){
     var link1b = "https://github.com/agatha12/Project2"
     var link2a = "https://agatha12.github.io/Job-Search-Site/"
     var link2b= "https://github.com/agatha12/Job-Search-Site"
-    var link3a = "https://agatha12.github.io/TriviaGame/index.html"
-    var link3b = "https://github.com/agatha12/TriviaGame"
-    var link4a = "https://agatha12.github.io/Liri-Bot/index.html"
-    var link4b = "https://github.com/agatha12/Liri-Bot"
+    var link3a = "https://murmuring-shore-75631.herokuapp.com/"
+    var link3b = "https://github.com/agatha12/Clicky-Game"
+    var link4a = "https://arcane-reef-94155.herokuapp.com/"
+    var link4b = "https://github.com/agatha12/Mongo-Scraper"
     var img1 = "assets/images/Screenshot (55).png"
     var img2 = "assets/images/dreamjob.png"
-    var img3 = "assets/images/trivia.png" 
-    var img4 = "assets/images/Screenshot (7).png"
+    var img3 = "assets/images/Screenshot (58).png" 
+    var img4 = "assets/images/Screenshot (59).png"
 
 
     $("#b0").text("Shopping Site")
     $("#b1").text("Job Search Site")
-    $("#b2").text("Animal Trivia Game")
-    $("#b3").text("Liri Bot Node Application")
+    $("#b2").text("Marvel Clicky Game")
+    $("#b3").text("Mongo Scarper")
     $("#cardlink10").attr("href", link1a)
     $("#cardlink10").text("Check out the site")
     $("#cardlink11").attr("href", link2a)
@@ -125,7 +125,7 @@ function portfolio(){
     $("#cardlink12").attr("href", link3a)
     $("#cardlink12").text("Play the game")
     $("#cardlink13").attr("href", link4a)
-    $("#cardlink13").text("See the screenshoots")
+    $("#cardlink13").text("Check out the site")
     $("#cardlink20").attr("href", link1b)
     $("#cardlink20").text("See the code on GitHub")
     $("#cardlink21").attr("href", link2b)
