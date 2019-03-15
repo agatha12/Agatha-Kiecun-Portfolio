@@ -23,7 +23,7 @@ function about() {
     div.attr("id", "agpic")
     p2.text("Shedrick Pelt sdotpdotmedia.com social media: @sdotpdotmedia")
     p.attr("id", "brand")
-    p.text("    Enthusiastic full stack developer with a background in Quality Control and Management. Highly motivated, fast learner eager to expand my knowledge of the field and contribute to your company in a meaningful way. Great communicator with experience collaborating on a team to creatively solve problems and produce a quality product on a tight deadline. Detail oriented and neat programer who thrives in a fast paced environment. Proficient in CSS, JavaScript and Node and highly adept at learning new technologies.")
+    p.text("Enthusiastic full stack developer with a background in Quality Control and Management. Recent graduate with certificated from Rutgers University 24-week-long intensive boot camp. A highly motivated, fast learner eager to expand my knowledge of the field and contribute in a meaningful way. Great communicator with experience collaborating on a team to creatively solve problems and produce a quality product on a tight deadline. Detail oriented programmer who thrives in a fast-paced environment. Proficient in multiple programming languages and highly adept at learning new technologies. ")
     
     div.append(img)
     div.append(p2)
@@ -84,7 +84,7 @@ function contact(){
     $("#conactdiv").append(p)
     $("#conactdiv").append(p2)
     $("#conactdiv").append(p3)
-    $("#conactdiv").append(button)
+    //$("#conactdiv").append(button)
     $("#conactdiv").append(p5)
 
     
@@ -100,24 +100,24 @@ function portfolio(){
     // $("#display").css("width", "800px")
     makeCards(4)
 
-    var link1a = "https://frozen-atoll-67387.herokuapp.com/"
-    var link1b = "https://github.com/agatha12/Project2"
-    var link2a = "https://agatha12.github.io/Job-Search-Site/"
-    var link2b= "https://github.com/agatha12/Job-Search-Site"
+    var link1a = "https://boiling-sea-88261.herokuapp.com/"
+    var link1b = "https://github.com/agatha12/Travel-App"
+    var link2a = "https://frozen-atoll-67387.herokuapp.com/"
+    var link2b= "https://github.com/agatha12/Project2"
     var link3a = "https://murmuring-shore-75631.herokuapp.com/"
     var link3b = "https://github.com/agatha12/Clicky-Game"
-    var link4a = "https://arcane-reef-94155.herokuapp.com/"
-    var link4b = "https://github.com/agatha12/Mongo-Scraper"
-    var img1 = "assets/images/Screenshot (55).png"
-    var img2 = "assets/images/dreamjob.png"
+    var link4a = "https://agatha12.github.io/Job-Search-Site/"
+    var link4b = "https://github.com/agatha12/Job-Search-Site"
+    var img1 = "assets/images/ScreenshotHome.png"
+    var img2 = "assets/images/Screenshot (55).png"
     var img3 = "assets/images/Screenshot (58).png" 
-    var img4 = "assets/images/Screenshot (59).png"
-
-
-    $("#b0").text("Shopping Site")
-    $("#b1").text("Job Search Site")
+    var img4 = "assets/images/dreamjob.png"
+    
+    
+    $("#b0").text("Travel Site")
+    $("#b1").text("Shopping Site")
     $("#b2").text("Marvel Clicky Game")
-    $("#b3").text("Mongo Scarper")
+    $("#b3").text("Job Search Site")
     $("#cardlink10").attr("href", link1a)
     $("#cardlink10").text("Check out the site")
     $("#cardlink11").attr("href", link2a)
@@ -250,7 +250,7 @@ function resume(){
 
     var embed = $("<embed>")
 
-    embed.attr("src", "assets/pdf/Agatha Kiecun Resume (2).pdf")
+    embed.attr("src", "assets/pdf/Agatha Kiecun Resume (3).pdf")
     embed.attr("type", "application/pdf")
     embed.attr("id", "resumepdf")
 
