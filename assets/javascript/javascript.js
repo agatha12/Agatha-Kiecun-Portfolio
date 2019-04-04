@@ -250,7 +250,7 @@ function resume(){
 
     var embed = $("<embed>")
 
-    embed.attr("src", "assets/pdf/Agatha Kiecun Resume (3).pdf")
+    embed.attr("src", "assets/pdf/Agatha Kiecun Resume (4).pdf")
     embed.attr("type", "application/pdf")
     embed.attr("id", "resumepdf")
 

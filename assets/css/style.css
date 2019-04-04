@@ -20,6 +20,12 @@ body {
     font-weight: bolder;
     font-family: 'Julius Sans One', sans-serif;
 }
+#hometext a {
+    color: white;
+    font-size: 45px;
+    font-weight: bolder;
+    font-family: 'Julius Sans One', sans-serif;
+}
 
 #header{
     height: 75px;
